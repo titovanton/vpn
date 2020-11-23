@@ -28,4 +28,5 @@ echo "Removing /1 routes..."
 ip route del 0.0.0.0/1 via $route_vpn_gateway
 ip route del 128.0.0.0/1 via $route_vpn_gateway
 
-success "connected!"
+IP=$(curl ipinfo.io/ip)
+success $IP
