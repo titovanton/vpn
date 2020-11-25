@@ -1,7 +1,5 @@
 source /home/titovanton/aliases/border.sh
 
 STAT=$(cyberghostvpn --status)
-border $STAT
-
-IP=$(curl ipinfo.io/ip)
-border $IP
+IP=$(curl -s ipinfo.io/ip)
+border $STAT "Public IP: $IP"
