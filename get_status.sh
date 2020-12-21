@@ -1,4 +1,4 @@
-source /home/titovanton/aliases/border.sh
+source /apps/aliases/border.sh
 
 STAT=$(cyberghostvpn --status)
 IP=$(curl -s ipinfo.io/ip)

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /home/titovanton/aliases/border.sh
+source /apps/aliases/border.sh
 
 if [ $EUID != 0 ]; then
   border "Please, run this with sudo..."
